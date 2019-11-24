@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+  // 数组的变量
+  var arr = [0, 10, 10, 10, 20];
+
+
+  // forEach 可以用于数组的循环
+  // item ：数组的中每个值
+  // index ：每个值的下标
+  // arr ：当前循环的数组；可选；
+  // 非常重要；
+  // arr.forEach(function(item, index, arr) {
+  //   console.log(item, index, arr);
+  // });
+
+
+
+
+  // 把数组中 满足某些条件的元素 重新抽取出来，形成一个新的数组；
+  var res = arr.filter(function(item, index, arr) {
+    // 满足的条件
+    return item >= 10;
+  });
+  // 返回值：满足条件的新数组；
+  // console.log(arr, res);
+
+
+
+  console.log(arr);
+
+  // 伪数组：
+  function fn() {
+    // 伪数组 不能用是数组的方法；
+    console.log(arguments);
+  }
+  fn(1, 10, 10, 10);
+</script>
+
+</html>;
